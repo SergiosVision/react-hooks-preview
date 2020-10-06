@@ -1,0 +1,30 @@
+.wrapper
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 50px
+  background-color: transparent
+  box-shadow: none
+
+.link
+  padding-left: 20px
+  padding-right: 20px
+  font-size: 18px
+  transition: .2s ease-in-out
+  height: 100%
+  position: relative
+
+  &:hover
+    color: #61DBFB
+
+  &.active
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      bottom: -1px
+      height: 4px
+      left: 0
+      right: 0
+      z-index: 1
+      background: rgb(97, 218, 251)

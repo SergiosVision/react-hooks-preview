@@ -1,0 +1,21 @@
+.button
+  background-color: #61dafb
+  border: none
+  outline: none
+  color: rgb(40, 44, 52)
+  padding: 10px 25px
+  white-space: nowrap
+  transition: .2s ease-in-out
+
+  &:disabled
+    opacity: .8
+
+  &:not(:disabled)
+    cursor: pointer
+
+    &:focus
+      background-color: #61dafb
+
+    &:hover
+      background-color: rgb(40, 44, 52)
+      color: #f3f3f3
